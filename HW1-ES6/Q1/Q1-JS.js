@@ -1,5 +1,4 @@
-﻿const counter1 = new counter();
-class counter { 
+﻿class counter { 
     constructor() {
         this.value = 0;
     }
@@ -18,7 +17,7 @@ class counter {
         document.querySelector("#p1").innerHTML = str;
     }
 }
-
+const counter1 = new counter();
 
 //when I have some elements to wait for them
 window.addEventListener("load", () => {
