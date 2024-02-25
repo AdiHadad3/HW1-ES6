@@ -1,0 +1,54 @@
+
+body{
+    font-family: "Fredoka", sans-serif;
+    background: #c2dedf;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 10px;
+  background-color: rgb(89, 133, 141);
+  padding: 0px 20px 20px 20px;
+  border-radius: 10%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-right: 10px; 
+  text-align-last:left;
+}
+
+#form button {
+  margin-top: 20px;
+  align-self: center;
+}
+
+form p{
+  color: red;
+  margin: 0;
+  text-align-last: left;
+}
+
+img{
+  width:100px;
+}
+
+#regForm{
+  width:450px;
+  background-color: rgb(89, 133, 141);
+  border-radius: 10%;
+  padding-bottom: 20px;
+}
+
+#regForm p{
+  text-align-last: center;
+}
+#regForm h2{
+padding-top: 10px;
+}
