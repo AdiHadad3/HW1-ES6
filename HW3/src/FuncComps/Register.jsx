@@ -222,6 +222,7 @@ export default function Register({registerUser}){
             id="img"
             accept="image/jpeg,image/jpg" 
             onChange={handleFileChange}
+            required
             /><br />
             </div>
             <img src={formData.img}/>
