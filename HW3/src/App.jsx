@@ -145,19 +145,6 @@ function App() {
   //get all the details of the user and update its data
   const editUser = (userData) => {
     SetShowEdit(false);
-    // let updated= users.map((user)=>{
-    //   if (user.email == userData.email) {
-    //     return userData;
-    //   }
-    //   return user;
-    // })
-    // setUsers(updated)
-    // if (!isAdmin) {
-    //       //use the updated data of the user in the loged user
-    //       setLogedUser(userData);
-    //       saveToSessionStorage("userData", userData);
-    //       setUserToEdit(userData);
-    // }
     setUsers((prev) => {
       let updated = prev.map((user) => {
         if (user.email == userData.email) {
@@ -180,6 +167,7 @@ function App() {
   const deleteUser = (email) => {
     const removedUser = users.filter((user) => user.email != email);
     setUsers(removedUser);
+    SetShowEdit(false);
   };
 
   //edit user by the admin
